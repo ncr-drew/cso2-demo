@@ -342,6 +342,7 @@ img {
     content: ''; }
 
 .app__header {
+  min-height: 50px;
   margin-bottom: 40px; }
 
 .app__message {
