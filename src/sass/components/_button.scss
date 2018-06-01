@@ -1,0 +1,27 @@
+//
+// Button Styles
+//
+.button {
+  display: inline-block;
+  min-width: 140px;
+  padding: 15px 10px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #007a98;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 150ms ease color, 150ms ease background-color;
+}
+
+.button--alt {
+  background-color: #fff;
+  color: #007a98;
+  border: 1px solid #007a98;
+
+  &:hover {
+    background-color: #007a98;
+    color: #fff;
+  }
+}

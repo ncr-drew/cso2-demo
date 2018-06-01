@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="dist/screen.css">
+</head>
+<body>
+  <div class="app app--cart-expanded">
+    <header class="app__header">
+      <div class="app__message">This Kiosk is shutting down in 10 minutes.  Current time: 09:50 AM</div>
+      <img src="images/Banner-Landscape.png" alt="" class="app__banner">
+    </header>
+    <main class="app__main">
+      <div class="layout-container">
+        <h2>Select Menu Item</h2>
+        <div class="grid">
+          <div class="grid__col grid__col--6">
+            <div class="card">
+              <img src="images/300x300.png" alt="" class="card__img">
+              <div class="card__content">Card Content</div>
+            </div>
+          </div>
+          <div class="grid__col grid__col--6">
+            <div class="card">
+              <img src="images/300x300.png" alt="" class="card__img">
+              <div class="card__content">Card Content</div>
+            </div>
+          </div>
+          <div class="grid__col grid__col--6">
+            <div class="card">
+              <img src="images/300x300.png" alt="" class="card__img">
+              <div class="card__content">Card Content</div>
+            </div>
+          </div>
+          <div class="grid__col grid__col--6">
+            <div class="card">
+              <img src="images/300x300.png" alt="" class="card__img">
+              <div class="card__content">Card Content</div>
+            </div>
+          </div>
+          <div class="grid__col grid__col--6">
+            <div class="card">
+              <img src="images/300x300.png" alt="" class="card__img">
+              <div class="card__content">Card Content</div>
+            </div>
+          </div>
+          <div class="grid__col grid__col--6">
+            <div class="card">
+              <img src="images/300x300.png" alt="" class="card__img">
+              <div class="card__content">Card Content</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="app__footer">
+      <div class="layout-container">
+        <div class="cart">
+          <h2>Review My Order</h2>
+          <table class="cart__items">
+            <tbody>
+              <tr class="cart__item">
+                <td class="cart__item-img">
+                  <img src="images/120x120.png" alt="">
+                </td>
+                <td>
+                  <h3 class="cart__item-title">Chickpea and Tomato Salad</h3>
+                  <ul class="cart__item-options">
+                    <li>Ranch Dressing</li>
+                    <li>Blue Cheese</li>
+                  </ul>
+                </td>
+                <td>
+                  <input type="text" value="1" class="cart__item-quantity">
+                </td>
+                <td align="right">
+                  <h3 class="cart__item-price">$00.00</h3>
+                  <button>Trash</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="cart__summary">
+            <div class="cart__summary-content">
+              <h4>Special Instructions</h4>
+              <p>Please include extra soy sauce and siracha on the side.</p>
+            </div>
+            <table class="cart__summary-total">
+              <tbody>
+                <tr>
+                  <td>Subtotal</td>
+                  <td align="right">$10.99</td>
+                </tr>
+                <tr>
+                  <td>Tax</td>
+                  <td align="right">$1.00</td>
+                </tr>
+                <tr>
+                  <td>Discount</td>
+                  <td align="right">$1.00</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Total</td>
+                  <td align="right">$10.99</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <div class="cart__actions">
+            <button class="button">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

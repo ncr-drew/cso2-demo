@@ -1,0 +1,78 @@
+//
+// Layout Styles
+//
+
+.layout-container {
+  max-width: $site-width;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.app {
+}
+
+.app--cart-expanded {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    content: '';
+  }
+}
+
+//
+// Header Styles
+.app__header {
+  margin-bottom: 40px;
+}
+
+.app__message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 14px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 20 / 14;
+}
+
+.app__banner {
+  width: 100%;
+}
+
+//
+// Footer Styles
+.app__footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  padding-bottom: 12px;
+  box-shadow: 1px -2px 4px 0 rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  z-index: 100;
+
+  .app--cart-expanded & {
+    height: 80%;
+  }
+}
+
+.app__footer-actions {
+  margin-bottom: 14px;
+}
+
+.app__footer-description {
+  color: #5c6e82;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+}

@@ -1,0 +1,17 @@
+//
+// Image Block Styles
+//
+
+.img-block {
+  position: relative;
+}
+
+.img-block__overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.92);
+  text-align: center;
+}
