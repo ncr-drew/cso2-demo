@@ -27,3 +27,16 @@ $grid-gap: 20px;
     width: percentage($i / $grid-cols);
   }
 }
+
+@each $point, $size in $breakpoints {
+  @media (min-width: $size) {
+    @for $i from 1 through $grid-cols {
+      .grid__col--#{$point}-#{$i} {
+        @media (min-width: $size) {
+          flex-basis: percentage($i / $grid-cols);
+          width: percentage($i / $grid-cols);
+        }
+      }
+    }
+  }
+}

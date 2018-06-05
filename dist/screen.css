@@ -326,12 +326,19 @@ img {
   vertical-align: middle; }
 
 .layout-container {
-  max-width: 620px;
+  max-width: 652px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px; }
+  @media (orientation: landscape) {
+    .layout-container {
+      max-width: 972px; } }
 
 .app--cart-expanded {
-  position: relative; }
+  position: relative;
+  overflow: hidden;
+  max-height: 100vh; }
   .app--cart-expanded::after {
     position: absolute;
     top: 0;
@@ -344,6 +351,11 @@ img {
 .app__header {
   min-height: 50px;
   margin-bottom: 40px; }
+  .app--fixed-header .app__header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; }
 
 .app__message {
   position: absolute;
@@ -360,6 +372,12 @@ img {
 .app__banner {
   width: 100%; }
 
+.app__main {
+  padding-bottom: 134px; }
+  @media (min-width: 650px) {
+    .app--fixed-header .app__main {
+      padding-top: 24.41406%; } }
+
 .app__footer {
   position: fixed;
   bottom: 0;
@@ -372,6 +390,17 @@ img {
   z-index: 100; }
   .app--cart-expanded .app__footer {
     height: 80%; }
+
+.app__cart-toggle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.4);
+  background: transparent;
+  transform: translate(-50%, -50%); }
 
 .app__footer-actions {
   margin-bottom: 14px; }
@@ -442,6 +471,186 @@ img {
   flex-basis: 100%;
   width: 100%; }
 
+@media (min-width: 650px) and (min-width: 650px) {
+  .grid__col--sm-1 {
+    flex-basis: 8.33333%;
+    width: 8.33333%; } }
+
+@media (min-width: 650px) and (min-width: 650px) {
+  .grid__col--sm-2 {
+    flex-basis: 16.66667%;
+    width: 16.66667%; } }
+
+@media (min-width: 650px) and (min-width: 650px) {
+  .grid__col--sm-3 {
+    flex-basis: 25%;
+    width: 25%; } }
+
+@media (min-width: 650px) and (min-width: 650px) {
+  .grid__col--sm-4 {
+    flex-basis: 33.33333%;
+    width: 33.33333%; } }
+
+@media (min-width: 650px) and (min-width: 650px) {
+  .grid__col--sm-5 {
+    flex-basis: 41.66667%;
+    width: 41.66667%; } }
+
+@media (min-width: 650px) and (min-width: 650px) {
+  .grid__col--sm-6 {
+    flex-basis: 50%;
+    width: 50%; } }
+
+@media (min-width: 650px) and (min-width: 650px) {
+  .grid__col--sm-7 {
+    flex-basis: 58.33333%;
+    width: 58.33333%; } }
+
+@media (min-width: 650px) and (min-width: 650px) {
+  .grid__col--sm-8 {
+    flex-basis: 66.66667%;
+    width: 66.66667%; } }
+
+@media (min-width: 650px) and (min-width: 650px) {
+  .grid__col--sm-9 {
+    flex-basis: 75%;
+    width: 75%; } }
+
+@media (min-width: 650px) and (min-width: 650px) {
+  .grid__col--sm-10 {
+    flex-basis: 83.33333%;
+    width: 83.33333%; } }
+
+@media (min-width: 650px) and (min-width: 650px) {
+  .grid__col--sm-11 {
+    flex-basis: 91.66667%;
+    width: 91.66667%; } }
+
+@media (min-width: 650px) and (min-width: 650px) {
+  .grid__col--sm-12 {
+    flex-basis: 100%;
+    width: 100%; } }
+
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .grid__col--m-1 {
+    flex-basis: 8.33333%;
+    width: 8.33333%; } }
+
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .grid__col--m-2 {
+    flex-basis: 16.66667%;
+    width: 16.66667%; } }
+
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .grid__col--m-3 {
+    flex-basis: 25%;
+    width: 25%; } }
+
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .grid__col--m-4 {
+    flex-basis: 33.33333%;
+    width: 33.33333%; } }
+
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .grid__col--m-5 {
+    flex-basis: 41.66667%;
+    width: 41.66667%; } }
+
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .grid__col--m-6 {
+    flex-basis: 50%;
+    width: 50%; } }
+
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .grid__col--m-7 {
+    flex-basis: 58.33333%;
+    width: 58.33333%; } }
+
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .grid__col--m-8 {
+    flex-basis: 66.66667%;
+    width: 66.66667%; } }
+
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .grid__col--m-9 {
+    flex-basis: 75%;
+    width: 75%; } }
+
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .grid__col--m-10 {
+    flex-basis: 83.33333%;
+    width: 83.33333%; } }
+
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .grid__col--m-11 {
+    flex-basis: 91.66667%;
+    width: 91.66667%; } }
+
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .grid__col--m-12 {
+    flex-basis: 100%;
+    width: 100%; } }
+
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .grid__col--l-1 {
+    flex-basis: 8.33333%;
+    width: 8.33333%; } }
+
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .grid__col--l-2 {
+    flex-basis: 16.66667%;
+    width: 16.66667%; } }
+
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .grid__col--l-3 {
+    flex-basis: 25%;
+    width: 25%; } }
+
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .grid__col--l-4 {
+    flex-basis: 33.33333%;
+    width: 33.33333%; } }
+
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .grid__col--l-5 {
+    flex-basis: 41.66667%;
+    width: 41.66667%; } }
+
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .grid__col--l-6 {
+    flex-basis: 50%;
+    width: 50%; } }
+
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .grid__col--l-7 {
+    flex-basis: 58.33333%;
+    width: 58.33333%; } }
+
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .grid__col--l-8 {
+    flex-basis: 66.66667%;
+    width: 66.66667%; } }
+
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .grid__col--l-9 {
+    flex-basis: 75%;
+    width: 75%; } }
+
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .grid__col--l-10 {
+    flex-basis: 83.33333%;
+    width: 83.33333%; } }
+
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .grid__col--l-11 {
+    flex-basis: 91.66667%;
+    width: 91.66667%; } }
+
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .grid__col--l-12 {
+    flex-basis: 100%;
+    width: 100%; } }
+
 .img-block {
   position: relative; }
 
@@ -450,9 +659,13 @@ img {
   left: 0;
   bottom: 0;
   width: 100%;
+  height: 120px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.92);
   text-align: center; }
+  .img-block__overlay img {
+    width: auto;
+    max-height: 100%; }
 
 .card {
   border-radius: 3px;

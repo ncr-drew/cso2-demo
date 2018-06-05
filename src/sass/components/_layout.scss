@@ -3,9 +3,15 @@
 //
 
 .layout-container {
-  max-width: $site-width;
+  max-width: $site-width + 32px;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+
+  @media (orientation: landscape) {
+    max-width: $site-width--landscape + 32px;
+  }
 }
 
 .app {
@@ -13,6 +19,8 @@
 
 .app--cart-expanded {
   position: relative;
+  overflow: hidden;
+  max-height: 100vh;
 
   &::after {
     position: absolute;
@@ -30,6 +38,13 @@
 .app__header {
   min-height: 50px;
   margin-bottom: 40px;
+
+  .app--fixed-header & {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 }
 
 .app__message {
@@ -50,6 +65,21 @@
 }
 
 //
+// Content styles
+.app__main {
+  padding-bottom: $footer-height-collapsed;
+
+  .app--fixed-header & {
+    @each $point, $size in $header-ratios {
+      $mq: map-get($breakpoints, $point);
+      @media (min-width: $mq) {
+        padding-top: $size;
+      }
+    }
+  }
+}
+
+//
 // Footer Styles
 .app__footer {
   position: fixed;
@@ -65,6 +95,18 @@
   .app--cart-expanded & {
     height: 80%;
   }
+}
+
+.app__cart-toggle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.4);
+  background: transparent;
+  transform: translate(-50%, -50%);
 }
 
 .app__footer-actions {

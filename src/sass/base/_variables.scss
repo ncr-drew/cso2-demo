@@ -5,3 +5,16 @@
 //
 // Layout
 $site-width: 620px;
+$site-width--landscape: 940px;
+$header-height: 274px;
+$footer-height-collapsed: 134px;
+
+$header-ratios: (sm: percentage(250/1024));
+
+//
+// Responsive
+$breakpoints: (
+  sm: 650px,
+  m: 1024px,
+  l: 1200px
+);

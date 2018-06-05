@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="dist/screen.css">
 </head>
 <body>
-  <div class="app">
+  <div class="app app--fixed-header">
     <header class="app__header">
       <div class="app__message">This Kiosk is shutting down in 10 minutes.  Current time: 09:50 AM</div>
       <img src="images/Banner-Landscape.png" alt="" class="app__banner">
@@ -16,39 +16,39 @@
       <div class="layout-container">
         <h2>Select Menu Item</h2>
         <div class="grid">
-          <div class="grid__col grid__col--6">
+          <div class="grid__col grid__col--sm-6 grid__col--m-4">
             <div class="card">
-              <img src="images/300x300.png" alt="" class="card__img">
+              <img src="images/Main-menu-item_01.png" alt="" class="card__img">
+              <div class="card__content">Sandwhiches</div>
+            </div>
+          </div>
+          <div class="grid__col grid__col--sm-6 grid__col--m-4">
+            <div class="card">
+              <img src="images/Main-menu-item_02.png" alt="" class="card__img">
+              <div class="card__content">Salads</div>
+            </div>
+          </div>
+          <div class="grid__col grid__col--sm-6 grid__col--m-4">
+            <div class="card">
+              <img src="images/Main-menu-item_03.png" alt="" class="card__img">
+              <div class="card__content">Desert</div>
+            </div>
+          </div>
+          <div class="grid__col grid__col--sm-6 grid__col--m-4">
+            <div class="card">
+              <img src="images/Main-menu-item_04.png" alt="" class="card__img">
+              <div class="card__content">Sides</div>
+            </div>
+          </div>
+          <div class="grid__col grid__col--sm-6 grid__col--m-4">
+            <div class="card">
+              <img src="images/Main-menu-item_05.png" alt="" class="card__img">
               <div class="card__content">Card Content</div>
             </div>
           </div>
-          <div class="grid__col grid__col--6">
+          <div class="grid__col grid__col--sm-6 grid__col--m-4">
             <div class="card">
-              <img src="images/300x300.png" alt="" class="card__img">
-              <div class="card__content">Card Content</div>
-            </div>
-          </div>
-          <div class="grid__col grid__col--6">
-            <div class="card">
-              <img src="images/300x300.png" alt="" class="card__img">
-              <div class="card__content">Card Content</div>
-            </div>
-          </div>
-          <div class="grid__col grid__col--6">
-            <div class="card">
-              <img src="images/300x300.png" alt="" class="card__img">
-              <div class="card__content">Card Content</div>
-            </div>
-          </div>
-          <div class="grid__col grid__col--6">
-            <div class="card">
-              <img src="images/300x300.png" alt="" class="card__img">
-              <div class="card__content">Card Content</div>
-            </div>
-          </div>
-          <div class="grid__col grid__col--6">
-            <div class="card">
-              <img src="images/300x300.png" alt="" class="card__img">
+              <img src="images/Main-menu-item_06.png" alt="" class="card__img">
               <div class="card__content">Card Content</div>
             </div>
           </div>
@@ -56,6 +56,9 @@
       </div>
     </main>
     <footer class="app__footer">
+      <a href="cart.html" class="app__cart-toggle">
+        <img src="images/cart.svg" alt="">
+      </a>
       <div class="app__footer-actions">
         <button class="button button--alt">Back</button>
         <button class="button button--alt">Start Over</button>
