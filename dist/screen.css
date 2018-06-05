@@ -719,6 +719,11 @@ img {
   color: #5c6e82;
   font-size: 14px; }
 
+.cart__item-delete {
+  padding: 0;
+  border: 0;
+  background-color: transparent; }
+
 .cart__item-quantity {
   width: 48px;
   height: 48px;
