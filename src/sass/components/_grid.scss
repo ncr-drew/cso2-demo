@@ -32,10 +32,8 @@ $grid-gap: 20px;
   @media (min-width: $size) {
     @for $i from 1 through $grid-cols {
       .grid__col--#{$point}-#{$i} {
-        @media (min-width: $size) {
-          flex-basis: percentage($i / $grid-cols);
-          width: percentage($i / $grid-cols);
-        }
+        flex-basis: percentage($i / $grid-cols);
+        width: percentage($i / $grid-cols);
       }
     }
   }
