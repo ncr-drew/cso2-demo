@@ -13,11 +13,13 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
   transition: 150ms ease color, 150ms ease background-color;
   &:hover {
     text-decoration: none;
     background-color: #fff;
     color: $blue;
+    border: 1px solid $blue;
   }
 }
 

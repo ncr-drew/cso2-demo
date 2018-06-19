@@ -487,33 +487,45 @@ a {
 .menu-item__info {
   font-size: 14px; }
 
-.menu-item__add {
+.circle {
   background-color: #007a98;
   width: 30px;
   height: 30px;
   border-radius: 15px;
-  border: 3px solid #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  margin: -25px 10px 0 auto;
+  border: none;
   cursor: pointer; }
-  .menu-item__add:before, .menu-item__add:after {
+  .circle:before, .circle:after {
     content: '';
     display: block;
     background-color: #fff;
     position: absolute;
     border-radius: 2px;
     transition: all 0.2s; }
-  .menu-item__add:before {
-    width: 2px;
-    height: 14px; }
-  .menu-item__add:after {
+  .circle:after {
     width: 14px;
     height: 2px; }
-  .menu-item__add:hover:before, .menu-item__add:hover:after {
+  .circle:hover:before, .circle:hover:after {
     transform: rotate(180deg); }
+
+.circle--plus:before {
+  width: 2px;
+  height: 14px; }
+
+.circle--disabled {
+  cursor: not-allowed;
+  opacity: 0.7; }
+  .circle--disabled:hover:before, .circle--disabled:hover:after {
+    transform: none; }
+
+.circle--border {
+  border: 3px solid #fff; }
+
+.menu-item__add {
+  margin: -25px 10px 0 auto; }
 
 .grid {
   display: flex;
@@ -771,11 +783,13 @@ a {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
   transition: 150ms ease color, 150ms ease background-color; }
   .button:hover {
     text-decoration: none;
     background-color: #fff;
-    color: #007a98; }
+    color: #007a98;
+    border: 1px solid #007a98; }
 
 .button--alt {
   background-color: #fff;
@@ -794,8 +808,10 @@ a {
   vertical-align: top; }
 
 .cart__item-img {
-  width: 140px;
-  padding-right: 20px; }
+  width: 120px; }
+
+.cart__item-details {
+  padding-left: 20px; }
 
 .cart__item-title {
   margin-bottom: 10px; }
@@ -812,14 +828,10 @@ a {
   border: 0;
   background-color: transparent; }
 
-.cart__item-quantity {
-  width: 48px;
-  height: 48px;
-  border: 1px solid #c8d1d9;
-  border-radius: 4px;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center; }
+.cart__item-increments {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
 
 .cart__item-price {
   margin-bottom: 3px; }
