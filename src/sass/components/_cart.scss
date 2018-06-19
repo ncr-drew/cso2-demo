@@ -12,6 +12,9 @@
 
 .cart__item {
   vertical-align: top;
+  td {
+    padding-top: 20px;
+  }
 }
 
 .cart__item-img {
@@ -100,4 +103,55 @@
 
 .cart__actions {
   text-align: right;
+}
+
+.cart__item-actions {
+  border-bottom: 1px solid #ddd;
+}
+
+.button__cell {
+  padding: 15px 0;
+  width: 160px;
+  text-align: right;
+}
+
+.footer__close {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    background-color: $blue;
+    position: absolute;
+    transition: all 0.2s;
+    width: 24px;
+    height: 3px;
+  }
+  &:before {
+    transform: rotate(135deg);
+  }
+  &:after {
+    transform: rotate(45deg);
+  }
+  &:hover {
+    &:before {
+      transform: rotate(315deg);
+    }
+    &:after {
+      transform: rotate(225deg);
+    }
+  }
 }

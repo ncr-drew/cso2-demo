@@ -38,3 +38,12 @@ $grid-gap: 20px;
     }
   }
 }
+
+@media (width: 1080px) {
+  @for $i from 1 through $grid-cols {
+    .grid__col--xl-#{$i} {
+      flex-basis: percentage($i / $grid-cols);
+      width: percentage($i / $grid-cols);
+    }
+  }
+}

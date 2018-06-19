@@ -52,6 +52,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 2;
     @media screen and (width: 1080px) {
       position: static;
     }
@@ -253,4 +254,8 @@ a {
 
 .menu-item__add {
   margin: -25px 10px 0 auto;
+}
+
+.img-block__img {
+  width: 100%;
 }

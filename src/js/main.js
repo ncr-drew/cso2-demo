@@ -1,4 +1,5 @@
 let navItems = [];
+let removeButtons = [];
 
 function changeActiveClass() {
 	Array.prototype.forEach.call(navItems, item => {
@@ -43,6 +44,16 @@ function decreaseQuantity() {
 	}
 }
 
+function removeCartItem() {
+	const buttons = Array.from(removeButtons);
+	const index = buttons.indexOf(this);
+	const cartItems = document.getElementsByClassName('cart__item');
+	const cartItemActions = document.getElementsByClassName('cart__item-actions');
+
+	cartItems[index].parentNode.removeChild(cartItems[index]);
+	cartItemActions[index].parentNode.removeChild(cartItemActions[index]);
+}
+
 function onReady(){
 	navItems = document.getElementsByClassName('app__nav-item');
 	Array.prototype.forEach.call(navItems, item => {
@@ -57,6 +68,11 @@ function onReady(){
 	let decrementButtons = document.getElementsByClassName('cart__item-minus');
 	Array.prototype.forEach.call(decrementButtons, btn => {
 		btn.addEventListener('click', decreaseQuantity);
+	});
+
+	removeButtons = document.getElementsByClassName('cart__item-remove');
+	Array.prototype.forEach.call(removeButtons, btn => {
+		btn.addEventListener('click', removeCartItem);
 	});
 };
   
