@@ -130,6 +130,7 @@ a {
 
   .app--cart-expanded & {
     height: 80%;
+    overflow: scroll;
   }
 }
 
