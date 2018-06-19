@@ -115,6 +115,11 @@
   text-align: right;
 }
 
+.cart__wrapper {
+  overflow: scroll;
+  height: 100%;
+}
+
 .footer__close {
   position: absolute;
   top: -30px;

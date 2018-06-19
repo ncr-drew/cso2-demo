@@ -432,8 +432,7 @@ a {
   background-color: #fff;
   z-index: 100; }
   .app--cart-expanded .app__footer {
-    height: 80%;
-    overflow: scroll; }
+    height: 80%; }
 
 .app__cart-toggle {
   position: absolute;
@@ -920,6 +919,10 @@ a {
   padding: 15px 0;
   width: 160px;
   text-align: right; }
+
+.cart__wrapper {
+  overflow: scroll;
+  height: 100%; }
 
 .footer__close {
   position: absolute;
