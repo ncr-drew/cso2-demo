@@ -3,18 +3,23 @@
 //
 
 //
+// Colors
+$blue: #007a98;
+$gray: #5c6e82;
+
+//
 // Layout
 $site-width: 620px;
 $site-width--landscape: 940px;
-$header-height: 274px;
-$footer-height-collapsed: 134px;
+$footer-height-collapsed: 200px;
 
-$header-ratios: (sm: percentage(250/1024));
+$header-ratios: (xs: 252px, sm: 252px, m: 340px, l: 384px);
 
 //
 // Responsive
 $breakpoints: (
-  sm: 650px,
-  m: 1024px,
-  l: 1200px
+  xs: 650px,
+  sm: 769px,
+  m: 1025px,
+  l: 1440px
 );

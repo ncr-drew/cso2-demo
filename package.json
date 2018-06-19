@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css":
-      "node-sass --source-map true --include-path node_modules src/sass -o dist/",
+    "build:css": "node-sass --source-map true --include-path node_modules src/sass -o dist/",
     "watch:css": "nodemon --watch src/sass -e scss -x 'npm run build:css'",
     "start": "npm run build:css && npm run watch:css"
   },
@@ -15,6 +14,7 @@
   "dependencies": {
     "node-sass": "^4.9.0",
     "nodemon": "^1.17.5",
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.0",
+    "npm": "^6.1.0"
   }
 }

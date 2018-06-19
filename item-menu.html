@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Item Menu</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="dist/screen.css">
+</head>
+<body>
+	<div class="app app--fixed-header">
+		<header class="app__header">
+			<div class="app__message">This Kiosk is shutting down in 10 minutes.  Current time: 09:50 AM</div>
+			<figure class="app__banner"></figure>
+		</header>
+		<main class="app__main">
+			<div class="layout-container">
+				<nav class="app__nav">
+					<a href="#" class="app__nav-item active">Sandwiches</a>
+					<a href="#" class="app__nav-item">Salads</a>
+					<a href="#" class="app__nav-item">Sides</a>
+					<a href="#" class="app__nav-item">Desserts</a>
+					<a href="#" class="app__nav-item">Drinks</a>
+				</nav>
+				<div class="grid">
+					<div class="grid__col grid__col--xs-4">
+						<div class="app__menu-item">
+							<img src="images/Item-120x120-01.png" alt="Healthy Wrap" class="menu-item__img">
+							<button class="menu-item__add"></button>
+							<div class="menu-item__content">
+								<h4 class="menu-item__title">Chicken pea tomato salad</h4>
+								<p class="menu-item__details">$12.50 | 350 Cal</p>
+								<a href="#" class="menu-item__info">More Info</a>
+							</div>
+						</div>
+					</div>
+					<div class="grid__col grid__col--xs-4">
+						<div class="app__menu-item">
+							<img src="images/Item-120x120-01.png" alt="Healthy Wrap" class="menu-item__img">
+							<button class="menu-item__add"></button>
+							<div class="menu-item__content">
+								<h4 class="menu-item__title">Chicken pea tomato salad</h4>
+								<p class="menu-item__details">$12.50 | 350 Cal</p>
+								<a href="#" class="menu-item__info">More Info</a>
+							</div>
+						</div>
+					</div>
+					<div class="grid__col grid__col--xs-4">
+						<div class="app__menu-item">
+							<img src="images/Item-120x120-01.png" alt="Healthy Wrap" class="menu-item__img">
+							<button class="menu-item__add"></button>
+							<div class="menu-item__content">
+								<h4 class="menu-item__title">Chicken pea tomato salad</h4>
+								<p class="menu-item__details">$12.50 | 350 Cal</p>
+								<a href="#" class="menu-item__info">More Info</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="app__footer">
+			<a href="cart.html" class="app__cart-toggle">
+				<img src="images/cart.svg" alt="">
+			</a>
+			<div class="app__footer-actions">
+				<div>
+					<a href="restaurant-selection.html" class="button button--alt">Back</a>
+					<a href="restaurant-selection.html" class="button button--alt">Start Over</a>
+				</div>
+				<div>
+					<button class="button button--alt">Button</button>
+					<button class="button">Apply Changes</button>
+				</div>
+	  		</div>
+	  		<p class="app__footer-description">2000 calories a day is used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request.</p>
+		</footer>
+	</div>
+	<script src="src/js/main.js"></script>
+</body>
+</html>

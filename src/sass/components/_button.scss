@@ -7,21 +7,27 @@
   padding: 15px 10px;
   border: 0;
   border-radius: 4px;
-  background-color: #007a98;
+  background-color: $blue;
   color: #fff;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   transition: 150ms ease color, 150ms ease background-color;
+  &:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: $blue;
+  }
 }
 
 .button--alt {
   background-color: #fff;
-  color: #007a98;
-  border: 1px solid #007a98;
+  color: $blue;
+  border: 1px solid $blue;
 
   &:hover {
-    background-color: #007a98;
+    background-color: $blue;
     color: #fff;
   }
 }

@@ -10,47 +10,46 @@
   <div class="app app--fixed-header">
     <header class="app__header">
       <div class="app__message">This Kiosk is shutting down in 10 minutes.  Current time: 09:50 AM</div>
-      <img src="images/Banner-Landscape.png" alt="" class="app__banner">
+      <figure class="app__banner"></figure>
     </header>
     <main class="app__main">
       <div class="layout-container">
-        <h2>Select Menu Item</h2>
         <div class="grid">
           <div class="grid__col grid__col--sm-6 grid__col--m-4">
-            <div class="card">
+            <a class="card" href="item-menu.html">
               <img src="images/Main-menu-item_01.png" alt="" class="card__img">
-              <div class="card__content">Sandwhiches</div>
-            </div>
+              <div class="card__content">Sandwiches</div>
+            </a>
           </div>
           <div class="grid__col grid__col--sm-6 grid__col--m-4">
-            <div class="card">
+            <a class="card" href="item-menu.html">
               <img src="images/Main-menu-item_02.png" alt="" class="card__img">
               <div class="card__content">Salads</div>
-            </div>
+            </a>
           </div>
           <div class="grid__col grid__col--sm-6 grid__col--m-4">
-            <div class="card">
+            <a class="card" href="item-menu.html">
               <img src="images/Main-menu-item_03.png" alt="" class="card__img">
-              <div class="card__content">Desert</div>
-            </div>
+              <div class="card__content">Desserts</div>
+            </a>
           </div>
           <div class="grid__col grid__col--sm-6 grid__col--m-4">
-            <div class="card">
+            <a class="card" href="item-menu.html">
               <img src="images/Main-menu-item_04.png" alt="" class="card__img">
               <div class="card__content">Sides</div>
-            </div>
+            </a>
           </div>
           <div class="grid__col grid__col--sm-6 grid__col--m-4">
-            <div class="card">
+            <a class="card" href="item-menu.html">
               <img src="images/Main-menu-item_05.png" alt="" class="card__img">
-              <div class="card__content">Card Content</div>
-            </div>
+              <div class="card__content">Drinks</div>
+            </a>
           </div>
           <div class="grid__col grid__col--sm-6 grid__col--m-4">
-            <div class="card">
+            <a class="card" href="item-menu.html">
               <img src="images/Main-menu-item_06.png" alt="" class="card__img">
               <div class="card__content">Card Content</div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -60,8 +59,14 @@
         <img src="images/cart.svg" alt="">
       </a>
       <div class="app__footer-actions">
-        <button class="button button--alt">Back</button>
-        <button class="button button--alt">Start Over</button>
+        <div>
+          <a href="restaurant-selection.html" class="button button--alt">Back</a>
+          <a href="restaurant-selection.html" class="button button--alt">Start Over</a>
+        </div>
+        <div>
+          <button class="button button--alt">Button</button>
+          <button class="button">Apply Changes</button>
+        </div>
       </div>
       <p class="app__footer-description">2000 calories a day is used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request.</p>
     </footer>
