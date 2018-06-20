@@ -463,11 +463,17 @@ a {
   background-color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
   text-align: center;
-  color: #5c6e82; }
+  color: #5c6e82;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   @media screen and (width: 1080px) {
     .app__message {
       padding: 20px;
       font-size: 21px; } }
+
+.app__message-icon {
+  margin-right: 10px; }
 
 .app__banner {
   width: 100%;
