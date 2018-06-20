@@ -1,75 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Main Menu</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="dist/screen.css">
+	<meta charset="UTF-8">
+	<title>Main Menu</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="dist/screen.css">
 </head>
 <body>
-  <div class="app app--fixed-header">
-    <header class="app__header">
-      <div class="app__message">This Kiosk is shutting down in 10 minutes.  Current time: 09:50 AM</div>
-      <figure class="app__banner"></figure>
-    </header>
-    <main class="app__main">
-      <div class="layout-container">
-        <div class="grid">
-          <div class="grid__col grid__col--sm-6 grid__col--m-4 grid__col--l-3">
-            <a class="card" href="item-menu.html">
-              <img src="images/Main-menu-item_01.png" alt="" class="card__img">
-              <div class="card__content">Sandwiches</div>
-            </a>
-          </div>
-          <div class="grid__col grid__col--sm-6 grid__col--m-4 grid__col--l-3">
-            <a class="card" href="item-menu.html">
-              <img src="images/Main-menu-item_02.png" alt="" class="card__img">
-              <div class="card__content">Salads</div>
-            </a>
-          </div>
-          <div class="grid__col grid__col--sm-6 grid__col--m-4 grid__col--l-3">
-            <a class="card" href="item-menu.html">
-              <img src="images/Main-menu-item_03.png" alt="" class="card__img">
-              <div class="card__content">Desserts</div>
-            </a>
-          </div>
-          <div class="grid__col grid__col--sm-6 grid__col--m-4 grid__col--l-3">
-            <a class="card" href="item-menu.html">
-              <img src="images/Main-menu-item_04.png" alt="" class="card__img">
-              <div class="card__content">Sides</div>
-            </a>
-          </div>
-          <div class="grid__col grid__col--sm-6 grid__col--m-4 grid__col--l-3">
-            <a class="card" href="item-menu.html">
-              <img src="images/Main-menu-item_05.png" alt="" class="card__img">
-              <div class="card__content">Drinks</div>
-            </a>
-          </div>
-          <div class="grid__col grid__col--sm-6 grid__col--m-4 grid__col--l-3">
-            <a class="card" href="item-menu.html">
-              <img src="images/Main-menu-item_06.png" alt="" class="card__img">
-              <div class="card__content">Card Content</div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer class="app__footer">
-      <a href="cart.html" class="app__cart-toggle">
-        <img src="images/cart.svg" alt="">
-      </a>
-      <div class="app__footer-actions">
-        <div>
-          <a href="restaurant-selection.html" class="button button--alt">Back</a>
-          <a href="restaurant-selection.html" class="button button--alt">Start Over</a>
-        </div>
-        <div>
-          <button class="button button--alt">Button</button>
-          <button class="button">Apply Changes</button>
-        </div>
-      </div>
-      <p class="app__footer-description">2000 calories a day is used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request.</p>
-    </footer>
-  </div>
+	<div class="app app--fixed-header">
+		<header class="app__header">
+			<div class="app__message">This Kiosk is shutting down in 10 minutes.  Current time: 09:50 AM</div>
+			<figure class="app__banner"></figure>
+		</header>
+		<main class="app__main">
+			<div class="layout-container">
+				<div class="grid">
+					<div class="grid__col grid__col--sm-6 grid__col--m-4 grid__col--l-3">
+						<a class="card" href="item-menu.html">
+							<img src="images/Main-menu-item_01.png" alt="" class="card__img">
+							<div class="card__content">Sandwiches</div>
+						</a>
+					</div>
+					<div class="grid__col grid__col--sm-6 grid__col--m-4 grid__col--l-3">
+						<a class="card" href="item-menu.html">
+							<img src="images/Main-menu-item_02.png" alt="" class="card__img">
+							<div class="card__content">Salads</div>
+						</a>
+					</div>
+					<div class="grid__col grid__col--sm-6 grid__col--m-4 grid__col--l-3">
+						<a class="card" href="item-menu.html">
+							<img src="images/Main-menu-item_03.png" alt="" class="card__img">
+							<div class="card__content">Desserts</div>
+						</a>
+					</div>
+					<div class="grid__col grid__col--sm-6 grid__col--m-4 grid__col--l-3">
+						<a class="card" href="item-menu.html">
+							<img src="images/Main-menu-item_04.png" alt="" class="card__img">
+							<div class="card__content">Sides</div>
+						</a>
+					</div>
+					<div class="grid__col grid__col--sm-6 grid__col--m-4 grid__col--l-3">
+						<a class="card" href="item-menu.html">
+							<img src="images/Main-menu-item_05.png" alt="" class="card__img">
+							<div class="card__content">Drinks</div>
+						</a>
+					</div>
+					<div class="grid__col grid__col--sm-6 grid__col--m-4 grid__col--l-3">
+						<a class="card" href="item-menu.html">
+							<img src="images/Main-menu-item_06.png" alt="" class="card__img">
+							<div class="card__content">Card Content</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div class="cart__overlay hidden"></div>
+		<footer class="app__footer">
+			<button class="app__cart-open">
+				<img src="images/cart.svg" alt="">
+			</button>
+			<button class="app__cart-close"></button>
+			<div class="app__footer-actions">
+				<div>
+					<a href="restaurant-selection.html" class="button button--alt">Back</a>
+					<a href="restaurant-selection.html" class="button button--alt">Start Over</a>
+				</div>
+				<div>
+					<button class="button button--alt">Button</button>
+					<button class="button">Apply Changes</button>
+				</div>
+	  		</div>
+			<p class="app__footer-description">2000 calories a day is used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request.</p>
+			<div class="cart__wrapper">
+				<div class="layout-container">
+					<div class="cart">
+						<h2>Review My Order</h2>
+						<table class="cart__items">
+							<tbody>
+						  		<tr class="cart__item">
+									<td class="cart__item-img">
+							  			<img src="images/Item-120x120-01.png" alt="">
+									</td>
+									<td class="cart__item-details">
+							  			<h4 class="cart__item-title">Chickpea and Tomato Salad</h4>
+							  			<ul class="cart__item-options">
+											<li>Ranch Dressing</li>
+											<li>Blue Cheese</li>
+							  			</ul>
+									</td>
+									<td></td>
+									<td align="right">
+							  			<h4 class="cart__item-price">$12.50</h4>
+									</td>
+						  		</tr>
+						  		<tr class="cart__item-actions">
+									<td>
+							  			<div class="cart__item-increments">
+								  			<button class="cart__item-minus circle circle--disabled"></button>
+								  			<span class="cart__item-quantity">1</span>
+								  			<button class="cart__item-plus circle circle--plus"></button>
+							  			</div>
+									</td>
+									<td></td>
+									<td class="button__cell">
+							  			<button class="cart__item-edit button button--alt">Edit</button>
+									</td>
+									<td class="button__cell">
+							  			<button class="cart__item-remove button button--alt">Remove</button>
+									</td>
+						  		</tr>
+						  		<tr class="cart__item">
+							  		<td class="cart__item-img">
+										<img src="images/Item-120x120-02.png" alt="">
+							  		</td>
+							  		<td class="cart__item-details">
+										<h4 class="cart__item-title">Chickpea and Tomato Salad w/ Redwine Sauce</h4>
+										<ul class="cart__item-options">
+								  			<li>Ranch Dressing</li>
+								  			<li>Blue Cheese</li>
+										</ul>
+							  		</td>
+							  		<td></td>
+							  		<td align="right">
+										<h4 class="cart__item-price">$10.99</h4>
+							  		</td>
+								</tr>
+								<tr class="cart__item-actions">
+							  		<td>
+										<div class="cart__item-increments">
+											<button class="cart__item-minus circle circle--disabled"></button>
+											<span class="cart__item-quantity">1</span>
+											<button class="cart__item-plus circle circle--plus"></button>
+										</div>
+							  		</td>
+							  		<td></td>
+							  		<td class="button__cell">
+										<button class="cart__item-edit button button--alt">Edit</button>
+							  		</td>
+							  		<td class="button__cell">
+										<button class="cart__item-remove button button--alt">Remove</button>
+							  		</td>
+								</tr>
+							</tbody>
+					  	</table>
+					  	<div class="cart__summary">
+							<div class="cart__summary-content">
+						  		<h4>Special Instructions</h4>
+						  		<p>Please include extra soy sauce and siracha on the side.</p>
+							</div>
+							<table class="cart__summary-total">
+						  		<tbody>
+								<tr>
+							  		<td>Subtotal</td>
+							  		<td align="right">$23.49</td>
+								</tr>
+								<tr>
+							  		<td>Tax</td>
+							  		<td align="right">$1.41</td>
+								</tr>
+								<tr>
+							  		<td>Discount</td>
+							  		<td align="right">$1.00</td>
+								</tr>
+						  	</tbody>
+						  	<tfoot>
+								<tr>
+							  		<td>Total</td>
+							  		<td align="right">$23.90</td>
+								</tr>
+						  	</tfoot>
+						</table>
+					</div>
+					<div class="cart__actions">
+						<button class="button">Checkout</button>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="src/js/main.js"></script>
 </body>
 </html>

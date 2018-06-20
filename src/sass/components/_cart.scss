@@ -2,6 +2,7 @@
 // Cart Styles
 //
 .cart {
+  padding-bottom: 40px;
 }
 
 .cart__items {
@@ -120,7 +121,7 @@
   height: 100%;
 }
 
-.footer__close {
+.app__cart-close {
   position: absolute;
   top: -30px;
   left: 0;
@@ -130,11 +131,10 @@
   width: 60px;
   height: 60px;
   border-radius: 30px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   border: none;
-  cursor: pointer;
   &:before,
   &:after {
     content: '';
@@ -158,5 +158,21 @@
     &:after {
       transform: rotate(225deg);
     }
+  }
+  .slideInUp & {
+    display: flex;
+  }
+}
+
+.cart__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 99;
+  &.hidden {
+    display: none;
   }
 }

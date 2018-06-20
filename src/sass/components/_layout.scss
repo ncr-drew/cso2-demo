@@ -119,21 +119,19 @@ a {
 // Footer Styles
 .app__footer {
   position: fixed;
-  bottom: 0;
+  bottom: 15%;
   left: 0;
   width: 100%;
+  height: 80%;
   padding: 30px;
   padding-bottom: 12px;
   box-shadow: 1px -2px 4px 0 rgba(0, 0, 0, 0.3);
   background-color: #fff;
   z-index: 100;
-
-  .app--cart-expanded & {
-    height: 80%;
-  }
+  transform: translate3d(0, 100%, 0);
 }
 
-.app__cart-toggle {
+.app__cart-open {
   position: absolute;
   top: 0;
   left: 50%;
@@ -143,6 +141,9 @@ a {
   box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.4);
   background: transparent;
   transform: translate(-50%, -50%);
+  .slideInUp & {
+    display: none;
+  }
 }
 
 .app__footer-actions {
@@ -150,13 +151,22 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  .slideInUp & {
+    display: none;
+  }
 }
 
 .app__footer-description {
   color: $gray;
-  font-size: 13px;
+  font-size: 11px;
   font-weight: normal;
   text-align: center;
+  .slideInUp & {
+    display: none;
+  }
+  @media screen and (min-width: 875px) {
+    font-size: 13px;
+  }
 }
 
 .app__nav {
@@ -208,7 +218,6 @@ a {
   justify-content: center;
   position: relative;
   border: none;
-  cursor: pointer;
   &:before,
   &:after {
     content: '';

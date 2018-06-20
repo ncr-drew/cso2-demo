@@ -1,11 +1,15 @@
 //
 // Button Styles
 //
+button {
+  cursor: pointer;
+}
+
 .button {
   display: inline-block;
   min-width: 140px;
   padding: 15px 10px;
-  border: 0;
+  border: 1px solid transparent;
   border-radius: 4px;
   background-color: $blue;
   color: #fff;
@@ -13,7 +17,6 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  cursor: pointer;
   transition: 150ms ease color, 150ms ease background-color;
   &:hover {
     text-decoration: none;
