@@ -119,6 +119,10 @@
 .cart__wrapper {
   overflow: scroll;
   height: 100%;
+  display: none;
+  .slideInUp & {
+    display: block;
+  }
 }
 
 .app__cart-close {
