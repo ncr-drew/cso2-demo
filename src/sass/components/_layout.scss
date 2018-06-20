@@ -119,6 +119,12 @@ a {
       padding-top: 600px;
     }
   }
+  .app__page-restaurant & {
+    padding-top: 40px;
+    @media screen and (width: 1080px) {
+      padding-top: 180px;
+    }
+  }
 }
 
 //

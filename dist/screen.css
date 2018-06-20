@@ -511,6 +511,11 @@ a {
   @media screen and (width: 1080px) {
     .app--fixed-header .app__main {
       padding-top: 600px; } }
+  .app__page-restaurant .app__main {
+    padding-top: 40px; }
+    @media screen and (width: 1080px) {
+      .app__page-restaurant .app__main {
+        padding-top: 180px; } }
 
 .app__footer {
   position: fixed;
