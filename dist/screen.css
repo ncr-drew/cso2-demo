@@ -416,9 +416,6 @@ a {
     left: 0;
     width: 100%;
     z-index: 2; }
-    @media screen and (width: 1080px) {
-      .app--fixed-header .app__header {
-        position: static; } }
 
 .app__message {
   position: absolute;
