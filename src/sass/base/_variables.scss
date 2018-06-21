@@ -1,25 +1,16 @@
 //
 // Sass Variables
 //
-
 //
 // Colors
 $blue: #007a98;
 $gray: #5c6e82;
-
 //
 // Layout
 $site-width: 620px;
 $site-width--landscape: 940px;
 $footer-height-collapsed: 200px;
-
 $header-ratios: (xs: 252px, sm: 252px, m: 340px, l: 384px);
-
 //
 // Responsive
-$breakpoints: (
-  xs: 650px,
-  sm: 769px,
-  m: 1025px,
-  l: 1440px
-);
+$breakpoints: ( xs: 650px, sm: 769px, m: 1025px, l: 1440px);

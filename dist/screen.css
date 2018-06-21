@@ -428,8 +428,8 @@ a {
       padding-left: 70px; } }
   @media screen and (min-width: 1024px) {
     .layout-container {
-      padding-right: 40px;
-      padding-left: 40px; } }
+      padding-right: 70px;
+      padding-left: 70px; } }
   @media screen and (width: 1080px) {
     .layout-container {
       padding-right: 75px;
@@ -446,7 +446,7 @@ a {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-    content: ''; }
+    content: ""; }
 
 .app__header {
   min-height: 50px;
@@ -645,13 +645,14 @@ a {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   border: none; }
   .circle:before, .circle:after {
-    content: '';
+    content: "";
     display: block;
     background-color: #fff;
     position: absolute;
@@ -1011,6 +1012,9 @@ button {
 
 .cart {
   padding-bottom: 40px; }
+  @media screen and (min-width: 1024px) and (orientation: landscape) {
+    .cart {
+      display: flex; } }
 
 .cart__items {
   width: 100%;
@@ -1063,18 +1067,33 @@ button {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  margin-left: 40px;
   padding: 20px;
   background-color: #e9ecef; }
+  @media screen and (min-width: 1024px) and (orientation: landscape) {
+    .cart__summary {
+      flex-direction: column;
+      height: 96%; } }
+  @media screen and (min-width: 1920px) {
+    .cart__summary {
+      min-width: 400px; } }
 
 .cart__summary-content {
   width: 44%;
   flex-basis: 44%; }
   .cart__summary-content h4 {
     margin-bottom: 8px; }
+  @media screen and (min-width: 1024px) and (orientation: landscape) {
+    .cart__summary-content {
+      width: 100%;
+      flex-basis: 100%; } }
 
 .cart__summary-total {
   width: 42%;
   border-collapse: collapse; }
+  @media screen and (min-width: 1024px) and (orientation: landscape) {
+    .cart__summary-total {
+      width: 100%; } }
   .cart__summary-total tbody {
     border-bottom: 2px solid #c8d1d9; }
     .cart__summary-total tbody td {
@@ -1123,7 +1142,7 @@ button {
   justify-content: center;
   border: none; }
   .app__cart-close:before, .app__cart-close:after {
-    content: '';
+    content: "";
     display: block;
     background-color: #007a98;
     position: absolute;
