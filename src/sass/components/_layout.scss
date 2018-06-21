@@ -173,6 +173,14 @@ a {
   .slideInUp & {
     display: none;
   }
+  @media screen and (width: 1080px) {
+    width: 80px;
+    height: 80px;
+    border-width: 6px;
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .app__footer-actions {
@@ -185,10 +193,10 @@ a {
   }
   .button {
     &:first-child {
-      margin-right: 5px;
+      margin-right: 8px;
     }
     &:last-child {
-      margin-left: 5px;
+      margin-left: 8px;
     }
     @media screen and (width: 1080px) {
       margin-bottom: 30px;
@@ -313,7 +321,7 @@ a {
 }
 
 .circle--border {
-  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px #fff;
 }
 
 .menu-item__add {
