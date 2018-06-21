@@ -30,6 +30,7 @@ a {
 }
 
 .app {
+  height: 100%;
 }
 
 .app--cart-expanded {
@@ -114,6 +115,9 @@ a {
 // Content styles
 .app__main {
   padding-bottom: $footer-height-collapsed;
+  @media screen and (width: 1080px) {
+    padding-bottom: 380px;
+  }
   .app--fixed-header & {
     @each $point, $size in $header-ratios {
       $mq: map-get($breakpoints, $point);
