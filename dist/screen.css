@@ -1024,12 +1024,20 @@ button {
 
 .cart__item-img {
   width: 120px; }
+  @media screen and (width: 768px) {
+    .cart__item-img {
+      width: 160px; } }
 
 .cart__item-details {
   padding-left: 20px; }
 
 .cart__item-title {
   margin-bottom: 10px; }
+  @media screen and (width: 768px) {
+    .cart__item-title {
+      font-size: 18px;
+      line-height: 1.25;
+      width: 220px; } }
 
 .cart__item-options {
   margin: 0;
@@ -1088,8 +1096,10 @@ button {
 
 .button__cell {
   padding: 15px 0;
-  width: 160px;
+  width: 120px;
   text-align: right; }
+  .button__cell .button {
+    min-width: 100px; }
 
 .cart__wrapper {
   overflow: scroll;

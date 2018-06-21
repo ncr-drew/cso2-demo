@@ -20,6 +20,9 @@
 
 .cart__item-img {
   width: 120px;
+  @media screen and (width: 768px) {
+    width: 160px;
+  }
 }
 
 .cart__item-details {
@@ -28,6 +31,11 @@
 
 .cart__item-title {
   margin-bottom: 10px;
+  @media screen and (width: 768px) {
+    font-size: 18px;
+    line-height: 1.25;
+    width: 220px;
+  }
 }
 
 .cart__item-options {
@@ -112,8 +120,11 @@
 
 .button__cell {
   padding: 15px 0;
-  width: 160px;
+  width: 120px;
   text-align: right;
+  .button {
+    min-width: 100px;
+  }
 }
 
 .cart__wrapper {
