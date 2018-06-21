@@ -1025,7 +1025,16 @@ button {
 
 .cart__items-wrap {
   height: 100%;
-  overflow: scroll; }
+  overflow: scroll;
+  background: transparent; }
+  .cart__items-wrap::-webkit-scrollbar {
+    display: none; }
+  .cart__items-wrap::-webkit-scrollbar-track {
+    background-color: transparent; }
+  .cart__items-wrap::-webkit-scrollbar {
+    background-color: transparent; }
+  .cart__items-wrap::-webkit-scrollbar-thumb {
+    background-color: transparent; }
   @media screen and (min-width: 1024px) and (orientation: landscape) {
     .cart__items-wrap {
       padding-right: 40px;
