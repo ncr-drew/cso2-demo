@@ -588,6 +588,9 @@ a {
   text-align: center; }
   .slideInUp .app__footer-description {
     display: none; }
+  @media screen and (width: 768px) {
+    .app__footer-description {
+      font-size: 12px; } }
   @media screen and (width: 1080px) {
     .app__footer-description {
       max-width: 740px;
@@ -981,8 +984,8 @@ button {
 
 .button {
   display: inline-block;
-  min-width: 140px;
-  padding: 15px 10px;
+  min-width: 120px;
+  padding: 12px 10px;
   border: 1px solid transparent;
   border-radius: 4px;
   background-color: #007a98;

@@ -212,6 +212,9 @@ a {
   .slideInUp & {
     display: none;
   }
+  @media screen and (width: 768px) {
+    font-size: 12px;
+  }
   @media screen and (width: 1080px) {
     max-width: 740px;
     margin: 0 auto;
